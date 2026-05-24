@@ -1,0 +1,169 @@
+/* ── HOME ── */
+.hero {
+  position: relative;
+  padding: 6rem 0 4rem;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Decor grid */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: 
+    linear-gradient(var(--cor-grid-bg) 1px, transparent 1px),
+    linear-gradient(90deg, var(--cor-grid-bg) 1px, transparent 1px);
+  background-size: 40px 40px;
+  z-index: -2;
+}
+
+/* Radial Gradients */
+.hero::after {
+  content: '';
+  position: absolute;
+  top: -50%; left: 50%;
+  transform: translateX(-50%);
+  width: 800px; height: 800px;
+  background: radial-gradient(circle, rgba(230, 90, 40, 0.15) 0%, rgba(10, 10, 10, 0) 70%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.hero-title {
+  font-size: var(--text-hero);
+  margin-bottom: var(--gap-md);
+  line-height: 1.1;
+  font-family: var(--fonte-display);
+  text-transform: uppercase;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #f0ede6, var(--cor-acento));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+  font-size: var(--text-lg);
+  color: var(--cor-texto-muted);
+  max-width: 600px;
+  margin: 0 auto var(--gap-xl);
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: var(--gap-xl);
+  margin-top: 4rem;
+  border-top: 0.5px solid var(--cor-borda);
+  padding-top: var(--gap-lg);
+}
+
+.stat-item strong {
+  display: block;
+  font-family: var(--fonte-display);
+  font-size: var(--text-xl);
+  color: var(--cor-acento);
+}
+
+.stat-item span {
+  font-size: var(--text-sm);
+  color: var(--cor-texto-hint);
+  text-transform: uppercase;
+}
+
+/* Inline vs Quad */
+.vs-container {
+  display: flex;
+  gap: var(--gap-lg);
+}
+
+.vs-block {
+  flex: 1;
+  background: var(--cor-fundo-card);
+  padding: var(--gap-xl);
+  border: 0.5px solid var(--cor-borda);
+  border-radius: var(--radius-lg);
+}
+
+@media (max-width: 599px) {
+  .vs-container { flex-direction: column; }
+}
+
+/* Por que o RollRef */
+.pilares-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap-lg);
+}
+
+.pilar {
+  text-align: center;
+  padding: var(--gap-lg);
+}
+
+.pilar-icone {
+  font-size: 2rem;
+  color: var(--cor-acento);
+  margin-bottom: var(--gap-md);
+}
+
+@media (max-width: 599px) {
+  .pilares-grid { grid-template-columns: 1fr; }
+}
+
+/* Glossário */
+.glossario-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--gap-md);
+}
+
+.glossario-item {
+  background: var(--cor-fundo-card);
+  padding: var(--gap-md);
+  border: 0.5px solid var(--cor-borda);
+  border-radius: var(--radius-sm);
+}
+
+.glossario-item dt {
+  font-weight: 700;
+  color: var(--cor-acento);
+  margin-bottom: var(--gap-sm);
+}
+
+.glossario-item dd {
+  font-size: var(--text-sm);
+  color: var(--cor-texto-muted);
+}
+
+/* Search Container for compatibility with my React code */
+.search-container {
+  max-width: 600px;
+  margin: 0 auto var(--gap-xl);
+  position: relative;
+}
+
+.search-input {
+  width: 100%;
+  padding: var(--gap-md) var(--gap-xl);
+  background: var(--cor-fundo-card);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--radius-pill);
+  color: var(--cor-texto);
+  font-size: var(--text-md);
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.search-input:focus {
+  border-color: var(--cor-acento);
+  background: var(--cor-fundo-hover);
+}
+
+.flex { display: flex; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.items-center { align-items: center; }
+.gap-md { gap: var(--gap-md); }

@@ -1,0 +1,51 @@
+/* ── COMPARADOR ── */
+.comparador-panel {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--cor-fundo-card);
+  border-top: 1px solid var(--cor-acento);
+  padding: var(--gap-md);
+  z-index: 1000;
+  box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.comparador-table-container {
+  overflow-x: auto;
+  margin-bottom: var(--gap-xl);
+}
+
+.comparador-table {
+  width: 100%;
+  min-width: 800px;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.comparador-table th, .comparador-table td {
+  padding: var(--gap-md);
+  border-bottom: 0.5px solid var(--cor-borda);
+  border-right: 0.5px solid var(--cor-borda);
+}
+
+.comparador-table th {
+  background-color: var(--cor-fundo-card);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.comparador-table th:first-child,
+.comparador-table td:first-child {
+  border-left: 0.5px solid var(--cor-borda);
+  font-weight: 500;
+  color: var(--cor-texto-muted);
+  background-color: var(--cor-fundo-hover);
+}
+
+.attr-highlight {
+  background-color: rgba(230, 90, 40, 0.05);
+  color: var(--cor-acento);
+  font-weight: 700;
+}
