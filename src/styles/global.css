@@ -86,7 +86,7 @@ header {
 
 @supports (backdrop-filter: blur(12px)) {
   header {
-    background-color: rgba(10, 10, 10, 0.85);
+    background-color: rgba(248, 249, 250, 0.85);
     backdrop-filter: blur(12px);
   }
 }
@@ -183,12 +183,12 @@ footer {
 }
 
 .btn-primary {
-  background-color: var(--cor-acento);
+  background-color: var(--cor-cta);
   color: #fff;
 }
 
 .btn-primary:hover {
-  background-color: var(--cor-acento-hover);
+  background-color: var(--cor-cta-hover);
 }
 
 .btn-secondary, .btn-outline {

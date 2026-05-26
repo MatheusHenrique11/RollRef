@@ -2,22 +2,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;700&display=swap');
 
 :root {
-  --cor-fundo:        #0a0a0a;
-  --cor-fundo-card:   #111111;
-  --cor-fundo-hover:  #1a1a1a;
-  --cor-borda:        rgba(255, 255, 255, 0.08);
-  --cor-borda-hover:  rgba(255, 255, 255, 0.18);
+  --cor-fundo:        #F8F9FA;
+  --cor-fundo-card:   #FFFFFF;
+  --cor-fundo-hover:  #F4F1DE;
+  --cor-borda:        rgba(0, 0, 0, 0.08);
+  --cor-borda-hover:  rgba(0, 0, 0, 0.15);
 
-  --cor-texto:        #f0ede6;
-  --cor-texto-muted:  rgba(240, 237, 230, 0.55);
-  --cor-texto-hint:   rgba(240, 237, 230, 0.30);
+  --cor-texto:        #343A40;
+  --cor-texto-muted:  rgba(52, 58, 64, 0.70);
+  --cor-texto-hint:   rgba(52, 58, 64, 0.45);
 
-  --cor-acento:       #E65A28;
-  --cor-acento-hover: #c94e22;
-  --cor-acento-bg:    rgba(230, 90, 40, 0.12);
-  --cor-acento-borda: rgba(230, 90, 40, 0.35);
+  --cor-acento:       #7CA982;
+  --cor-acento-hover: #6A936F;
+  --cor-acento-bg:    rgba(124, 169, 130, 0.15);
+  --cor-acento-borda: rgba(124, 169, 130, 0.40);
 
-  --cor-grid-bg: rgba(255, 255, 255, 0.04);
+  --cor-cta:          #F28482;
+  --cor-cta-hover:    #E07371;
+
+  --cor-grid-bg: rgba(0, 0, 0, 0.04);
 
   --fonte-display: 'Bebas Neue', sans-serif;
   --fonte-corpo:   'DM Sans', sans-serif;
